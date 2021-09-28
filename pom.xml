@@ -71,16 +71,73 @@
             <artifactId>gson</artifactId>
             <version>2.1</version>
         </dependency>
+        <!--        <dependency>
+            <groupId>com.google.gdata</groupId>
+            <artifactId>gdata-client</artifactId>
+            <version>1.0</version>
+        </dependency>-->
+        <dependency>
+            <groupId>com.google.gdata</groupId>
+            <artifactId>gdata-client-1.0</artifactId>
+            <version>1.41.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gdata</groupId>
+            <artifactId>gdata-docs-3.0</artifactId>
+            <version>1.47.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gdata</groupId>
+            <artifactId>gdata-calendar-2.0</artifactId>
+            <version>1.41.5</version>
+        </dependency>
+
         <dependency>
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
             <version>3.1</version>
         </dependency>
+        <!-- https://sourceforge.net/projects/jhotdraw/
         <dependency>
             <groupId>org.opentcs.thirdparty.jhotdraw</groupId>
             <artifactId>jhotdraw</artifactId>
             <version>7.6.20190506</version>
+        </dependency>-->
+        
+        <dependency>
+            <groupId>org.jhotdraw</groupId>
+            <artifactId>jhotdraw</artifactId>
+            <version>7</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/jhotdraw7/JHotDraw7.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>com.l2fprod</groupId>
+            <artifactId>l2fprod-common-all</artifactId>
+            <version>6.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.swinglabs</groupId>
+            <artifactId>jxlayer</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jcommon</artifactId>
+            <version>1.0.23</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.nachocalendar</groupId>
+            <artifactId>nachocalendar</artifactId>
+            <version>0.25</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.gdata/gdata-media-1.0 -->
+        <dependency>
+            <groupId>com.google.gdata</groupId>
+            <artifactId>gdata-media-1.0</artifactId>
+            <version>1.41.5</version>
+        </dependency>
+
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
@@ -103,9 +160,41 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <id>alfresco</id>
+            <name>alfresco</name>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
+        </repository>
+        <repository>
+            <id>atlantis-3rdparty</id>
+            <url>https://packages.atlassian.com/maven-3rdparty/</url>
+            <name>atlantis-3rdparty</name>
+        </repository>
+        <repository>
+            <id>atlantis</id>
+            <url>https://maven.atlassian.com/3rdparty/</url>
+            <name>atlantis</name>
+        </repository>
+        <repository>
+            <id>maven.jahia.org</id>
+            <url>http://maven.jahia.org/maven2/</url>
+            <name>maven.jahia.org</name>
+        </repository>
+        <repository>
+            <id>red-hat</id>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <name>red-hat-ga</name>
+        </repository>
+        <repository>
+            <id>freehep</id>
+            <name>freehep</name>
+            <url>http://java.freehep.org/maven2/</url>
+        </repository>
+    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 </project>
